@@ -1,0 +1,25 @@
+{
+  "name": "nuimo-mqtt-bridge",
+  "version": "1.0.0",
+  "description": "MQTT bridge for Nuimo bluetooth remote control",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "dependencies": {
+    "mqtt": "^5.9.1",
+    "rocket-nuimo": "^1.2.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.44",
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.1.4"
+  }
+}
